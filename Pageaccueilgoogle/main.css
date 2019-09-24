@@ -1,0 +1,149 @@
+/*Link form*/
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgba(92, 91, 91, 0.788);
+}
+/*Button form*/
+button {
+    background-color: rgb(0, 132, 255);
+    cursor: pointer;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 8px 20px;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+}
+/*Top right corner icons*/ 
+#grp1 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: auto;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 20px;
+        column-gap: 15px;
+    }
+    #grp1 .box2 {
+        color: rgba(0, 0, 0, 0.842);
+    }
+
+
+/*Logo*/
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    transform: scale(130%);
+    padding-bottom: 20px;    
+}
+/*Search bar*/
+.SB 
+    {
+        display: flex;
+        justify-content: center;    
+        margin-left: 35%;   
+        margin-top: 20px;
+        margin-bottom: 5px;   
+        height: 50px;
+        border: none;
+        box-shadow: 0px 0px 1px 2px rgb(223, 222, 222);
+        border-width: 10%;
+        border-radius: 40px;
+        width: 580px;    
+    }
+.lp /*image magnifier*/
+    {
+        align-self: center;
+        margin-left: 10px;
+        margin-top: 18px;
+        padding: 2px 2px;
+    }
+input /*Search form*/
+{
+    height: 33px;
+    border: none;
+    border-radius: 40px;
+    width: 550px;
+    align-self: center;
+}
+/*Under links*/
+.ulinks 
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        column-gap: 15px;
+    }
+    .RG /*First icon*/
+    {
+        display: flex;
+        padding: 9px 9px;
+        background-color: #f0ebeb86;
+    }
+    
+    .gl /*second icon*/
+    {
+        display: flex;
+        background-color: #f0ebeb86;
+        padding: 9px 9px;
+    }
+/*Footer*/
+.foot
+{
+    width: 99%;
+    height: 90px;
+    position: absolute;bottom: 0;
+    background-color: rgba(161, 159, 159, 0.253)
+}
+.f1 /*Links group 1*/
+{
+    display: flex;
+    justify-content: flex-start;
+    height: 50%;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgba(156, 152, 152, 0.233);  
+    border-width: 1px;
+}
+.fr
+{
+    display: flex;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 23px;
+    font-size: 17px;
+    color: rgba(100, 98, 98, 0.726);
+}
+.f2 /*Links group2 absolute*/
+{
+    position: absolute;
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    height: 45%;
+    border-width: 1px;
+    color: rgba(100, 98, 98, 0.726);
+    column-gap: 25px;
+}
+.f3 /*Links group3 absolute*/
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 45%;
+    align-items: center;
+    column-gap: 25px;
+    margin-right: 23px;
+}
+
+
+
+
