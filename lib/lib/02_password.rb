@@ -1,15 +1,17 @@
+# On demande un mdp à l'utilisateur
 def signup
 puts "Définissez votre password"
 print "> "
-$mdp = gets.chomp
+$mdp = gets.chomp # symbole dollar devant la variable pour la passer en global et y faire appel dans les autres méthodes
 end
 
+# On demande à l'utilisateur d'entrer le dis mdp
 def login
     puts
     puts "Entrez votre password"
     print "> "
     $login = gets.chomp
-    while $mdp != $login
+    while $mdp != $login # Boucle tant que le bon mdp n'est pas rentré
         puts "Erreur: mauvais password"
         puts "Entrez votre password"
         print "> "
@@ -17,11 +19,12 @@ def login
     end
 end
 
+# Accès à "l'espace secret"
 def welcome_screen
     case
     when
-    $login == $mdp
-        puts
+    $login == $mdp # Accès si l'utilisateur à bien confirmé son mdp
+        puts     #Incroyable design ASCII qui nous rappelle les heures sombres d'internet.(code très léger et rapide)
         puts "  ##############################################"
         puts "  #                                            #"
         puts "  #     Bienvenu dans la zone secrète !        #"           
@@ -33,10 +36,10 @@ def welcome_screen
         puts "  #                                            #"
         puts "  ##############################################"
         print "> "
-        quit = gets
+        quit = gets # On demande un input à l'utilisateur pour quitter le programme parce que pourquoi pas
     end
 end
-
+# Méthode orchestre pour bien veiller à lancer les multiples blocs dans le bon ordre
 def perform
     signup
     login
