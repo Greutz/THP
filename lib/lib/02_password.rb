@@ -22,12 +22,16 @@ def welcome_screen
     when
     $login == $mdp
         puts
-        puts "Bienvenu dans la zone secrète !"
-        puts "Savais-tu que ce programme extraordinaire"
-        puts "à été codé en SEULEMENT SIX HEURES ?"
-        puts "Incroyable n'est-il pas ?"
-        puts 
-        puts "Appuie sur une touche pour quitter"
+        puts "  ##############################################"
+        puts "  #                                            #"
+        puts "  #     Bienvenu dans la zone secrète !        #"           
+        puts "  #    Savais-tu que ce fableux programme      #" 
+        puts "  #    à été codé en SEULEMENT SIX HEURES ?    #"
+        puts "  #         Incroyable n'est-il pas ?          #"
+        puts "  #                                            #"
+        puts "  #     Appuie sur une touche pour quitter     #"
+        puts "  #                                            #"
+        puts "  ##############################################"
         print "> "
         quit = gets
     end
